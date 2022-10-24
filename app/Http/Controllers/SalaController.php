@@ -19,7 +19,7 @@ class SalaController extends Controller
 
         $insert = Sala::insert($name, $lotacao );
         
-        return redirect()->route('cafes');;
+        return redirect()->route('salas');;
     }
 
     /**

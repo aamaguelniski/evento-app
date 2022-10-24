@@ -45,14 +45,6 @@ return new class extends Migration
      */
     public function down()
     {
-        /**
-         * Dropping Foreign Keys
-         * 
-         * @since 0.1.0
-         */
-        $table->dropForeign( 'cadastros_id_participante_foreign' );
-        $table->dropForeign( 'cadastros_id_sala_foreign' );
-        $table->dropForeign( 'cadastros_id_cafe_foreign' );
 
         /**
          * Dropping Table

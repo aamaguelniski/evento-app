@@ -52,7 +52,7 @@
         <div class="col-md">
             <h2>Salas</h2>
             <p>Salas cadastradas para atender ao evento</p>
-            <p>Total de salas:</p>
+            <p>Total de salas: {{ count( $salas ) }}</p>
             @if( count($salas) == 0 )
             <p>Nenhuma sala cadastrada até o momento.</p>
             @endif
@@ -85,7 +85,7 @@
             @endif
             <h2>Espaços para café</h2>
             <p>Espaços para café reservados para este evento.</p>
-            <p>Total de inscritos:</p>
+            <p>Total de espaços para café: {{ count( $cafes ) }}</p>
             @if( count($cafes) == 0 )
             <p>Nenhum Espaço para Café cadastrado até o momento.</p>  
             @endif
